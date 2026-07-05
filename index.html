@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jaya Rajwani — Director of AI</title>
-  <meta name="description" content="Jaya Rajwani, Director of AI — building AI products that matter, from computer vision at scale to client-facing multi-agent systems." />
+  <title>Jaya Rajwani — Forward-Deployed Agentic Systems</title>
+  <meta name="description" content="Jaya Rajwani, Director of AI — helping teams ship reliable AI products, not just impressive prototypes." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Jaya Rajwani — Director of AI" />
-  <meta property="og:description" content="Building AI products that matter — turning ambiguous workflows into reliable production systems, from computer vision at scale to client-facing multi-agent systems." />
+  <meta property="og:title" content="Jaya Rajwani — Forward-Deployed Agentic Systems" />
+  <meta property="og:description" content="Helping teams ship reliable AI products, not just impressive prototypes." />
   <meta property="og:image" content="og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Jaya Rajwani — Director of AI. Metrics: 12+ models in prod, 500K+ images, 50K+ farmers, 10K+ docs indexed." />
+  <meta property="og:image:alt" content="Jaya Rajwani — Forward-Deployed Agentic Systems. Metrics: 12+ models in prod, 500K+ images, 50K+ farmers, 10K+ docs indexed." />
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jaya Rajwani — Director of AI" />
-  <meta name="twitter:description" content="Building AI products that matter — turning ambiguous workflows into reliable production systems." />
+  <meta name="twitter:title" content="Jaya Rajwani — Forward-Deployed Agentic Systems" />
+  <meta name="twitter:description" content="Helping teams ship reliable AI products, not just impressive prototypes." />
   <meta name="twitter:image" content="og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,8 +58,8 @@
     <section id="home" class="hero">
       <p class="mono muted eyebrow">// director of ai · london</p>
       <h1>Jaya Rajwani</h1>
-      <p class="title mono">Director of AI — Customer-Facing AI Solutions</p>
-      <p class="positioning">I build AI products that matter — turning ambiguous workflows into reliable production systems, from computer vision at scale to client-facing multi-agent systems for enterprise teams.</p>
+      <p class="title mono">Director of AI — Forward-Deployed Agentic Systems</p>
+      <p class="positioning">I help teams ship reliable AI products, not just impressive prototypes.</p>
 
       <div class="status-strip" role="group" aria-label="Career metrics">
         <div class="chip"><span class="dot dot-live" aria-hidden="true"></span><span>12+ safety-critical models in prod</span></div>
@@ -79,9 +79,9 @@
 
       <div class="about-grid">
         <div class="bio">
-          <p>I'm a Director of AI based in London, currently building Google Cloud-based agentic AI systems for enterprise use cases at Traversaal.ai. My work sits at the intersection of research and production — I lead discovery with customers, design the architecture, build the evaluation layer that proves it works, and ship it.</p>
-          <p>Over the last several years I've led teams shipping end-to-end AI/ML systems across driver safety, transportation infrastructure, healthcare, and agri-tech — work that's ranged from computer vision pipelines processing hundreds of thousands of images to multi-agent systems coordinating tool calls across an enterprise retail client's catalog.</p>
-          <p>Before AI leadership, I was an engineer — and before that, an MS Data Science student at USC who spoke at my own commencement. I still teach: I've taught GenAI and agent architecture to ~500+ engineers, founders, and PMs through Maven, and co-created a free 7-day AI Agents course that reached 10,000+ learners.</p>
+          <p>I'm a Director of AI based in London, building agentic AI systems for enterprise teams at Traversaal.ai. My work sits between customers, product, and engineering: I lead discovery, shape the architecture, build the evaluation layer, and help teams turn ambiguous workflows into systems people can actually use.</p>
+          <p>I've led AI/ML work across enterprise retail, transportation, driver safety, healthcare, and agri-tech, from computer vision pipelines processing 500K+ images to multi-agent systems coordinating product search, vendor comparison, quoting, and retrieval over large document corpora.</p>
+          <p>I'm also an educator and builder of adoption pathways. I've taught GenAI, agents, RAG, MCP, and evaluation to engineers, founders, and PMs through Maven and community programs, and I'm creating Codex in Practice to help teams adopt AI coding agents responsibly in real engineering workflows.</p>
 
           <h3 class="mono subhead">Education</h3>
           <ul class="edu">
@@ -172,22 +172,22 @@
               <span class="status-tag live">● LIVE DEMO</span>
               <span class="mono muted case-index">case_01</span>
             </div>
-            <h3>Vantage — AI Compliance Engine</h3>
-            <p class="hook">A deterministic pipeline that catches regulatory violations and cites the exact rule — with zero hallucinated citations.</p>
+            <h3>Vantage: AI Compliance Engine</h3>
+            <p class="hook">A deterministic pipeline that catches regulatory violations and cites the exact rule, with zero hallucinated citations.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="vantage-body">expand ↓</button>
           <div class="case-body" id="vantage-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>Marketing compliance review for regulated industries (finance, fintech) is slow and inconsistent — every claim in every asset has to be manually checked against FINRA, FTC, and SEC rules, and generic LLM review can't be trusted because it recalls rule text from memory instead of the actual policy.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A five-stage deterministic pipeline: layout-aware document parsing (typed regions — headline, body, disclaimer) → spatial proximity mapping (measuring distance between claims and their disclaimers) → claim extraction → grounded rule retrieval (hybrid vector + knowledge-graph search over a curated policy corpus) → a constrained LLM verdict step that can only cite rules it was explicitly given.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Retrieval happens per-chunk rather than loading the full policy corpus into context — stuffing everything into the prompt dilutes signal and causes missed violations. The "no hallucinated citations" guarantee is enforced structurally (the model is only shown the top-4 relevant rules and validated against that set), not just requested via prompt.</p></div>
-            <div class="cb-row"><h4 class="mono">Stack</h4><p>OCR/layout detection, hybrid vector + knowledge-graph retrieval, LLM-as-judge verdicts, structured JSON contracts.</p></div>
-            <div class="cb-row"><h4 class="mono">Outcome</h4><p>This architecture pattern — applied to a defense-client compliance product at Traversaal — reduced compliance review timelines by 30%. The public build analyzes a full marketing asset in ~30 seconds.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>Marketing compliance review for regulated industries is slow and inconsistent. Every claim in every asset has to be checked against FINRA, FTC, and SEC rules, and generic LLM review cannot be trusted when it recalls rule text from memory instead of the actual policy.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A five-stage deterministic pipeline: layout aware document parsing, spatial proximity mapping between claims and disclaimers, claim extraction, grounded rule retrieval, and a constrained LLM verdict step that can only cite rules it was explicitly given.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Retrieval happens per chunk rather than loading the full policy corpus into context. That keeps the signal high and prevents missed violations. The no hallucinated citations guarantee is enforced structurally, not just requested in a prompt.</p></div>
+            <div class="cb-row"><h4 class="mono">Stack</h4><p>OCR and layout detection, hybrid vector and knowledge graph retrieval, LLM judge verdicts, structured JSON contracts.</p></div>
+            <div class="cb-row"><h4 class="mono">Outcome</h4><p>This architecture pattern was applied to a defense-client compliance product at Traversaal and reduced compliance review timelines by 30%. The public build analyzes a full marketing asset in ~30 seconds.</p></div>
             <div class="cb-row">
               <h4 class="mono">Live demo</h4>
               <div class="embed-app" data-embed-url="https://vantage-compliance-api.fly.dev/">
                 <iframe
                   src="https://vantage-compliance-api.fly.dev/"
-                  title="Vantage — AI Compliance Engine (live demo)"
+                  title="Vantage: AI Compliance Engine (live demo)"
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                   sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
@@ -207,17 +207,17 @@
               <span class="status-tag production">● PRODUCTION</span>
               <span class="mono muted case-index">case_02</span>
             </div>
-            <h3>Enterprise Retail Client — Multi-Agent Product Search &amp; Quoting</h3>
-            <p class="hook">Specialized agents for search, comparison, bundling, and quoting — coordinating through a shared protocol instead of one giant prompt.</p>
+            <h3>Enterprise Retail Client: Multi Agent Product Search &amp; Quoting</h3>
+            <p class="hook">Specialized agents for search, comparison, bundling, and quoting, coordinated through a shared protocol instead of one giant prompt.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="retail-body">expand ↓</button>
           <div class="case-body" id="retail-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>An enterprise retail client's customer-facing teams needed to search a large, fragmented product catalog, compare vendors, evaluate bundles, and generate mixed quotes — a workflow too broad and stateful for a single-agent chatbot to handle reliably.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A multi-agent system on Vertex AI, Google ADK, and Gemini, using MCP for tool access and A2A (agent-to-agent) for coordination. Separate agents own search, vendor comparison, bundle evaluation, and quote generation; each communicates through a shared protocol rather than sharing one large context window.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Splitting responsibilities into specialized agents kept each agent's context small enough to evaluate independently — critical for a client-facing system that had to clear evaluation gates before launch. A2A let each agent be built and tested in isolation before integration, instead of debugging one monolithic prompt.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>An enterprise retail client's customer facing teams needed to search a large, fragmented product catalog, compare vendors, evaluate bundles, and generate mixed quotes. The workflow was too broad and stateful for a single agent chatbot to handle reliably.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A multi agent system on Vertex AI, Google ADK, and Gemini, using MCP for tool access and A2A for agent coordination. Separate agents own search, vendor comparison, bundle evaluation, and quote generation; each communicates through a shared protocol rather than sharing one large context window.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Splitting responsibilities into specialized agents kept each agent's context small enough to evaluate independently. That mattered for a client facing system that had to clear evaluation gates before launch. A2A also let each agent be built and tested in isolation before integration.</p></div>
             <div class="cb-row"><h4 class="mono">Stack</h4><p>Vertex AI, Google ADK, Gemini, MCP, A2A.</p></div>
-            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Enabled product search, vendor comparison, bundle evaluation, and mixed-quote generation in a single client-facing flow.</p></div>
-            <div class="cb-row"><p class="muted mono note">private client work — described at architecture level only</p></div>
+            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Enabled product search, vendor comparison, bundle evaluation, and mixed quote generation in a single client facing flow.</p></div>
+            <div class="cb-row"><p class="muted mono note">private client work, described at architecture level only</p></div>
           </div>
         </article>
 
@@ -227,13 +227,13 @@
               <span class="status-tag live">● LIVE</span>
               <span class="mono muted case-index">case_03</span>
             </div>
-            <h3>Transconomy Roadmap — AI-Powered Roadway Asset Extraction</h3>
-            <p class="hook">Turns raw roadway imagery into standards-compliant asset inventories — 300+ asset types, no manual review pass required.</p>
+            <h3>Transconomy Roadmap: AI Powered Roadway Asset Extraction</h3>
+            <p class="hook">Turns raw roadway imagery into standards aligned asset inventories across 300+ asset types, without a manual review pass.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="transconomy-body">expand ↓</button>
           <div class="case-body" id="transconomy-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>Transportation agencies needed to convert raw geotagged roadway imagery into standardized, audit-ready asset inventories, a process that traditionally took months of manual review.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A computer vision pipeline (YOLO, ResNet, Mask2Former) detects and classifies 300+ roadway asset types — signs, striping, sidewalks, guardrails — directly against MUTCD and MIRE industry standards. A human-in-the-loop layer flags duplicates and anomalies for review. The pipeline runs on AWS, Spark, and Airflow to process large real-time batches of imagery.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>Transportation agencies needed to convert raw geotagged roadway imagery into standardized, auditable asset inventories, a process that traditionally took months of manual review.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A computer vision pipeline using YOLO, ResNet, and Mask2Former detects and classifies 300+ roadway asset types, including signs, striping, sidewalks, and guardrails, directly against MUTCD and MIRE industry standards. A human review layer flags duplicates and anomalies for review. The pipeline runs on AWS, Spark, and Airflow to process large near real time batches of imagery.</p></div>
             <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Classifying against MUTCD/MIRE standards from the start (rather than generic object detection) meant outputs were immediately usable in agencies' compliance and reporting workflows, not just a list of bounding boxes someone still had to translate.</p></div>
             <div class="cb-row"><h4 class="mono">Stack</h4><p>YOLO, ResNet, Mask2Former, AWS, Spark, Airflow.</p></div>
             <div class="cb-row"><h4 class="mono">Outcome</h4><p>20% improvement in operational efficiency; scaled to 500K+ geotagged images processed; cut compute costs by 40%.</p></div>
@@ -242,7 +242,7 @@
               <div class="embed-app" data-embed-url="https://transconomy.com/transconomy-roadmap/">
                 <iframe
                   src="https://transconomy.com/transconomy-roadmap/"
-                  title="Transconomy Roadmap — product page"
+                  title="Transconomy Roadmap product page"
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                   sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
@@ -265,15 +265,15 @@
               <span class="status-tag live">● LIVE</span>
               <span class="mono muted case-index">case_05</span>
             </div>
-            <h3>FHWA InfoTechnology Assistant — Conversational Access to Federal Standards</h3>
-            <p class="hook">Lets transportation engineers ask a plain-language question and get a cited answer, instead of manually navigating a federal classification system.</p>
+            <h3>FHWA InfoTechnology Assistant: Conversational Access to Federal Standards</h3>
+            <p class="hook">Lets transportation engineers ask a plain language question and get a cited answer, instead of manually navigating a federal classification system.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="fhwa-body">expand ↓</button>
           <div class="case-body" id="fhwa-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>Federal and state transportation engineers had to manually work through dense, tabular nondestructive-evaluation documentation to identify the right inspection technology for bridges, pavements, tunnels, or utilities.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A knowledge-graph-backed, retrieval-augmented conversational assistant scoped only to curated FHWA source documents — no open-web retrieval. It interprets tables and images alongside text, and grounds every answer in the agency's own reference material.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Restricting the retrieval corpus to FHWA-approved sources only was a deliberate trust decision for a federal audience — the system prioritizes "can I show my work" over broader coverage. Designed for progressive disclosure: a quick, direct answer first, with the option to dig into supporting documentation on follow-up.</p></div>
-            <div class="cb-row"><h4 class="mono">Stack</h4><p>Knowledge-graph-backed RAG, OCR, LangGraph, FastAPI, AWS Bedrock, OpenSearch, Mistral OCR.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>Federal and state transportation engineers had to manually work through dense, tabular nondestructive evaluation documentation to identify the right inspection technology for bridges, pavements, tunnels, or utilities.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A knowledge graph backed retrieval assistant scoped only to curated FHWA source documents, with no open web retrieval. It interprets tables and images alongside text, and grounds every answer in the agency's own reference material.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Restricting the retrieval corpus to FHWA-approved sources was a deliberate trust decision for a federal audience. The system prioritizes "can I show my work" over broader coverage. It gives a quick, direct answer first, with supporting documentation available on follow-up.</p></div>
+            <div class="cb-row"><h4 class="mono">Stack</h4><p>Knowledge graph backed RAG, OCR, LangGraph, FastAPI, AWS Bedrock, OpenSearch, Mistral OCR.</p></div>
             <div class="cb-row"><h4 class="mono">Outcome</h4><p>Across the broader hybrid RAG work built for FHWA, AASHTO, ASHRAE, and UN-affiliated clients, manual search time was reduced by 80% across a corpus of 10,000+ documents.</p></div>
             <div class="cb-row"><a class="ext-btn mono" href="https://iengineering.ai/fhwa-infotechnology-assistant/" target="_blank" rel="noopener">product page ↗</a></div>
           </div>
@@ -285,22 +285,22 @@
               <span class="status-tag internal">● INTERNAL</span>
               <span class="mono muted case-index">case_06</span>
             </div>
-            <h3>Motive — Production Reliability for Safety-Critical Driver AI</h3>
-            <p class="hook">Moved from aggregate accuracy to slice-based, true-recall evaluation — cutting diagnosis time from 3 days to 2 hours across 12 production models.</p>
+            <h3>Motive: Production Reliability for Safety Critical Driver AI</h3>
+            <p class="hook">Moved from aggregate accuracy to slice based, true recall evaluation and cut diagnosis time from 3 days to 2 hours across 12 production models.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="motive-body">expand ↓</button>
           <div class="case-body" id="motive-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>A fleet of 12 production driver-safety AI models needed continuous reliability oversight. Aggregate accuracy metrics were masking failure that was concentrated in specific operational segments — meaning problems were being caught late, if at all.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A slice-based evaluation pipeline segmenting model performance across 6 distinct operational contexts, paired with centralized health-monitoring dashboards and rollout-validation gates that a model has to clear before promotion to production.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Prioritized true-recall analysis over aggregate accuracy — a model can look fine in aggregate while failing badly in one segment that matters most. Built the diagnosis pipeline to be self-serve for the team, rather than requiring manual review for every investigation, which is what actually drove the speed-up.</p></div>
-            <div class="cb-row"><h4 class="mono">Stack</h4><p>Custom evaluation/monitoring pipelines, slice-based analysis, precision/recall tracking dashboards.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>A fleet of 12 production driver safety AI models needed continuous reliability oversight. Aggregate accuracy metrics were masking failures concentrated in specific operational segments, which meant problems were often caught late.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A slice based evaluation pipeline segmenting model performance across 6 distinct operational contexts, paired with centralized health monitoring dashboards and rollout validation gates that a model has to clear before promotion to production.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Prioritized true recall analysis over aggregate accuracy because a model can look healthy overall while failing badly in the segment that matters most. Built the diagnosis pipeline to be self serve for the team, which is what actually drove the speedup.</p></div>
+            <div class="cb-row"><h4 class="mono">Stack</h4><p>Custom evaluation and monitoring pipelines, slice based analysis, precision and recall tracking dashboards.</p></div>
             <div class="cb-row"><h4 class="mono">Outcome</h4><p>Diagnosis time cut from 3 days to 2 hours; model failure escalations down 30%; precision and recall improved 5% across 12 active models.</p></div>
             <div class="cb-row">
               <h4 class="mono">Product context</h4>
               <div class="embed-app" data-embed-url="https://gomotive.com/products/driver-safety/">
                 <iframe
                   src="https://gomotive.com/products/driver-safety/"
-                  title="Motive Driver Safety — product context"
+                  title="Motive Driver Safety product context"
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                   sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
@@ -320,16 +320,16 @@
               <span class="status-tag live">● LIVE</span>
               <span class="mono muted case-index">case_04</span>
             </div>
-            <h3>Transconomy Lens — Conversational AI for Transportation Asset Data</h3>
-            <p class="hook">Turn your roadway asset data into instant answers with AI-powered natural-language querying — get text, maps, and charts back with no technical skills required.</p>
+            <h3>Transconomy Lens: Conversational AI for Transportation Asset Data</h3>
+            <p class="hook">Turns roadway asset data into instant answers with natural language querying, returning text, maps, and charts without requiring technical skills.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="lens-body">expand ↓</button>
           <div class="case-body" id="lens-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>Transportation agencies already had rich geospatial asset data from Transconomy Roadmap, but decision-makers without GIS or query skills couldn't get to insight without a technical operator in the loop. Questions like "how many miles of line striping does the city have?" or "which intersections are missing crosswalks?" required someone else to run — the value in the data was gated behind expertise.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A natural-language interface layered on top of the Transconomy Roadmap GIS platform, delivered as a premium extension so it inherits the existing asset ontology (300+ MUTCD/MIRE-classified asset types) rather than building a new data model. Plain-English questions route to a query-generation stage against the geospatial asset database; results render as text summaries, interactive GIS maps, or charts depending on the question shape, with exportable reports for downstream sharing.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Every answer surfaces the underlying asset view and a shareable map or report — not just a chat reply. For agency users whose outputs get reused in stakeholder reports and compliance workflows, "show your work" mattered more than conversational polish. Integration also had to be non-disruptive: Lens plugs into existing Transconomy workflows and exports directly into the tools teams already use.</p></div>
-            <div class="cb-row"><h4 class="mono">Stack</h4><p>LLM-driven natural-language querying over GIS/asset database, interactive map rendering, chart generation, downloadable reports.</p></div>
-            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Turns questions like "where are stop signs rated in poor condition?" or "which intersections are missing crosswalks?" into maintenance-hotspot maps and cost estimates in seconds — usable by non-technical decision-makers directly, not just GIS staff.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>Transportation agencies already had rich geospatial asset data from Transconomy Roadmap, but decision makers without GIS or query skills could not get to insight without a technical operator in the loop. Questions like "how many miles of line striping does the city have?" or "which intersections are missing crosswalks?" required someone else to run.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>A natural language interface layered on top of the Transconomy Roadmap GIS platform, delivered as a premium extension so it inherits the existing asset ontology of 300+ MUTCD and MIRE classified asset types rather than building a new data model. Plain English questions route to a query generation stage against the geospatial asset database; results render as text summaries, interactive GIS maps, or charts depending on the question shape, with exportable reports for downstream sharing.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Every answer surfaces the underlying asset view and a shareable map or report, not just a chat reply. For agency users whose outputs get reused in stakeholder reports and compliance workflows, "show your work" mattered more than conversational polish. Lens also had to plug into existing Transconomy workflows and export directly into the tools teams already use.</p></div>
+            <div class="cb-row"><h4 class="mono">Stack</h4><p>LLM driven natural language querying over GIS and asset databases, interactive map rendering, chart generation, and downloadable reports.</p></div>
+            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Turns questions like "where are stop signs rated in poor condition?" or "which intersections are missing crosswalks?" into maintenance hotspot maps and cost estimates in seconds. Non technical decision makers can use the system directly, without waiting on GIS staff.</p></div>
 
             <div class="cb-row">
               <h4 class="mono">Video walkthrough</h4>
@@ -337,7 +337,7 @@
                 <div class="embed-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/o_OId1yo7-A"
-                    title="Transconomy Lens — walkthrough"
+                    title="Transconomy Lens walkthrough"
                     loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
@@ -351,7 +351,7 @@
               <div class="embed-app" data-embed-url="https://transconomy.com/transconomy-lens/">
                 <iframe
                   src="https://transconomy.com/transconomy-lens/"
-                  title="Transconomy Lens — product page"
+                  title="Transconomy Lens product page"
                   loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"
                   sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
@@ -375,27 +375,27 @@
               <span class="status-tag live">● LIVE</span>
               <span class="mono muted case-index">case_07</span>
             </div>
-            <h3>Farmdar — CropScan Crop Intelligence</h3>
-            <p class="hook">Satellite crop detection paired with a digitized farmer registry — turning "is this cropland" into "which farmer, which variety, ready when."</p>
+            <h3>Farmdar: CropScan Crop Intelligence</h3>
+            <p class="hook">Satellite crop detection paired with a digitized farmer registry, turning cropland detection into farmer, variety, and harvest readiness intelligence.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="farmdar-body">expand ↓</button>
           <div class="case-body" id="farmdar-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>Farmdar's satellite-based crop monitoring needed to translate into decisions mills and farmers could actually act on — tracking acreage, variety, and harvest readiness across huge, fragmented smallholder farming networks where most records were still kept manually.</p></div>
-            <div class="cb-row"><h4 class="mono">Architecture</h4><p>Remote-sensing and computer vision models (ResUNet, XGBoost, LightGBM) identify crop variety and growth stage from satellite imagery. This is paired with a digitized farmer registry so every field maps to a tracked ID, and AWS + Mapbox dashboards turn raw detections into operational maps agencies and mills can use directly.</p></div>
-            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Prioritized variety-level detection over generic crop/no-crop classification, because the real business need — tracking adoption of disease-resistant seed varieties — required knowing what was planted, not just that something was.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>Farmdar's satellite based crop monitoring needed to translate into decisions mills and farmers could actually act on. That meant tracking acreage, variety, and harvest readiness across huge, fragmented smallholder farming networks where most records were still kept manually.</p></div>
+            <div class="cb-row"><h4 class="mono">Architecture</h4><p>Remote sensing and computer vision models (ResUNet, XGBoost, LightGBM) identify crop variety and growth stage from satellite imagery. This is paired with a digitized farmer registry so every field maps to a tracked ID, and AWS + Mapbox dashboards turn raw detections into operational maps agencies and mills can use directly.</p></div>
+            <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Prioritized variety level detection over generic crop detection because the real business need was tracking adoption of disease resistant seed varieties. That required knowing what was planted, not just that something was.</p></div>
             <div class="cb-row"><h4 class="mono">Stack</h4><p>ResUNet, XGBoost, LightGBM, AWS (S3, Lambda, Glue, Airflow), Mapbox.</p></div>
-            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Digitized 10M+ acres of land and onboarded 50,000 farmers; drove 200% revenue growth for the platform. In one deployment for one of Pakistan's largest sugar mills, digitized 4,857 farmers for precise supply-chain tracking.</p></div>
+            <div class="cb-row"><h4 class="mono">Outcome</h4><p>Digitized 10M+ acres of land and onboarded 50,000 farmers; drove 200% revenue growth for the platform. In one deployment for one of Pakistan's largest sugar mills, digitized 4,857 farmers for precise supply chain tracking.</p></div>
             <div class="cb-row">
               <figure class="embed-figure">
                 <a href="https://www.farmdar.ai/products/" target="_blank" rel="noopener" class="embed-img-link">
                   <img
                     src="https://www.farmdar.ai/assets/mirror/cdn.prod.website-files.com/660564e054aa737d07590d3a/69a85fcb6d720e8b4c819432_Yeild-p-2000.png"
-                    alt="Farmdar CropScan — satellite crop yield map"
+                    alt="Farmdar CropScan satellite crop yield map"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     class="embed-img" />
                 </a>
-                <figcaption class="mono muted embed-cap">Farmdar CropScan — satellite yield map · image hosted by farmdar.ai</figcaption>
+                <figcaption class="mono muted embed-cap">Farmdar CropScan satellite yield map · image hosted by farmdar.ai</figcaption>
               </figure>
             </div>
             <div class="cb-row link-row">
@@ -476,6 +476,42 @@
           </div>
           <h3>Claude Code in Practice</h3>
           <p>A practical Traversaal Academy course for using Claude Code in real developer workflows, from setup and prompting to reusable project patterns.</p>
+          <ul class="course-list">
+            <li>15 short chapters from fresh install to deployed app</li>
+            <li>Covers CLAUDE.md, Skills, sub-agents, MCP, evals, and PRD pipelines</li>
+            <li>Built for PMs, non-coders, developers, and teams standardizing on Claude Code</li>
+          </ul>
+          <div class="syllabus-accordion" aria-label="Claude Code in Practice syllabus">
+            <details>
+              <summary><span>Foundations</span><span class="mono">01-06</span></summary>
+              <ul>
+                <li>Install Claude Code, connect an Anthropic account, and run the first prompt inside a real project</li>
+                <li>Create a CLAUDE.md so each session has durable project context</li>
+                <li>Use a first Skill to turn an idea into a structured PRD</li>
+              </ul>
+            </details>
+            <details>
+              <summary><span>MCP and app mental model</span><span class="mono">07-08</span></summary>
+              <ul>
+                <li>Understand frontend, backend, and AI backend boundaries</li>
+                <li>Use Playwright MCP so Claude Code can browse live URLs and current docs</li>
+              </ul>
+            </details>
+            <details>
+              <summary><span>Sub-agents and pipelines</span><span class="mono">09-11</span></summary>
+              <ul>
+                <li>Build research, PRD-reviewer, and code-reviewer agents</li>
+                <li>Chain agents into a reviewed PRD pipeline with no manual handoffs</li>
+              </ul>
+            </details>
+            <details>
+              <summary><span>Evals and deployment</span><span class="mono">12-15</span></summary>
+              <ul>
+                <li>Create a ground-truth table and evaluate a Skill against real cases</li>
+                <li>Deploy a Claude-powered app and audit the toolkit for the next real workflow</li>
+              </ul>
+            </details>
+          </div>
           <a class="ext-btn mono ghost" href="https://traversaal.ai/academy/courses/claude-code-in-practice" target="_blank" rel="noopener">course page ↗</a>
         </article>
 

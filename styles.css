@@ -353,6 +353,8 @@ h2 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 .featured-course {
   border-color: rgba(94, 234, 212, 0.35);
@@ -463,7 +465,8 @@ h2 {
   .course-grid { grid-template-columns: 1fr; }
   .featured-course { grid-row: auto; }
 }
-.course-primary-link { margin-top: 18px; }
+.course-card > .ext-btn { margin-top: auto; align-self: flex-start; }
+.course-primary-link { margin-top: auto; }
 
 /* ---------- Course preview page ---------- */
 .course-hero {
