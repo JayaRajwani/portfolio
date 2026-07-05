@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codex in Practice — Course Preview</title>
+  <meta name="description" content="A practical course preview for Codex in Practice: syllabus, sample lesson, and reliability lab for agentic systems." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#course-preview">Skip to content</a>
+
+  <header class="nav" role="banner">
+    <a href="index.html#home" class="brand mono" aria-label="Jaya Rajwani — home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      jaya.rajwani
+    </a>
+    <nav class="nav-links" aria-label="Course navigation">
+      <a href="index.html#courses">Courses</a>
+      <a href="#syllabus">Syllabus</a>
+      <a href="#sample-lesson">Sample Lesson</a>
+      <a href="#reliability-lab">Reliability Lab</a>
+    </nav>
+  </header>
+
+  <main id="course-preview">
+    <section class="course-hero">
+      <p class="mono muted eyebrow">// independent course preview</p>
+      <h1>Codex in Practice</h1>
+      <p class="title mono">Use Codex to plan, build, test, review, and evaluate real agentic workflows.</p>
+      <p class="positioning">This preview shows the shape of the course I am building: practical lessons, concrete exercises, and reliability habits that help builders move from "the agent did something once" to "the workflow is understandable, testable, and safe to iterate."</p>
+
+      <div class="course-proof-grid">
+        <div><span class="mono muted">format</span><strong>12 core lessons + advanced lab</strong></div>
+        <div><span class="mono muted">audience</span><strong>builders, PMs, founders, engineers</strong></div>
+        <div><span class="mono muted">artifact</span><strong>working Codex operating system</strong></div>
+        <div><span class="mono muted">status</span><strong>in development</strong></div>
+      </div>
+    </section>
+
+    <section id="syllabus" aria-labelledby="syllabus-h">
+      <div class="section-head">
+        <span class="mono muted section-label">// syllabus</span>
+        <h2 id="syllabus-h">What the course covers</h2>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card">
+          <span class="mono muted">module_01</span>
+          <h3>Context before commands</h3>
+          <p>Learn what Codex can inspect, change, and verify, then turn vague intent into a scoped task with goal, context, constraints, and done criteria.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">module_02</span>
+          <h3>Plan before build</h3>
+          <p>Use Codex to interview you, surface assumptions, produce an implementation plan, and define acceptance criteria before code changes begin.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">module_03</span>
+          <h3>Project memory with AGENTS.md</h3>
+          <p>Create durable repo guidance for setup commands, code style, testing expectations, review rules, and repeated mistakes.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">module_04</span>
+          <h3>Build, test, review</h3>
+          <p>Ask Codex for small changes, relevant tests, diff review, and risk-focused verification rather than accepting generated code on vibes.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">module_05</span>
+          <h3>Skills, MCP, and subagents</h3>
+          <p>Turn repeat workflows into skills, connect external context through MCP, and use subagents for bounded parallel exploration.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">module_06</span>
+          <h3>Reliable agentic systems</h3>
+          <p>Combine Codex, Claude, and Hermes into a build-critique-evaluate loop with golden examples, failure taxonomies, and regression checks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sample-lesson" aria-labelledby="lesson-h">
+      <div class="section-head">
+        <span class="mono muted section-label">// sample lesson</span>
+        <h2 id="lesson-h">Turn a vague request into a Codex task</h2>
+      </div>
+
+      <div class="lesson-layout">
+        <article class="lesson-main">
+          <h3>Lesson objective</h3>
+          <p>By the end of this lesson, the learner can write a Codex prompt that gives enough context for useful work and enough boundaries for safe verification.</p>
+
+          <h3>The pattern</h3>
+          <p>Use four blocks: goal, context, constraints, and done when. The point is not to write a longer prompt. The point is to remove ambiguity that would otherwise become agent guesswork.</p>
+
+          <div class="prompt-pair">
+            <div>
+              <h4 class="mono">Weak prompt</h4>
+              <pre class="course-pre mono">Improve the search page and make it better.</pre>
+            </div>
+            <div>
+              <h4 class="mono">Codex-ready prompt</h4>
+              <pre class="course-pre mono">Goal:
+Improve search results loading states and empty states.
+
+Context:
+Start with src/pages/search.tsx and existing components in src/components/search/.
+
+Constraints:
+Do not add a new UI library. Match existing styles. Keep changes small.
+
+Done when:
+There is a loading state, an empty state, and the existing search tests pass.
+Run the focused test command and summarize the diff risks.</pre>
+            </div>
+          </div>
+
+          <h3>Exercise</h3>
+          <p>Take one vague request from your real backlog. Rewrite it with the four-block pattern. Ask Codex to restate the task, name missing context, and propose a plan before editing.</p>
+
+          <h3>Expected output</h3>
+          <ul class="course-checklist">
+            <li>Codex identifies the right files before editing.</li>
+            <li>The plan includes a verification step.</li>
+            <li>The final answer names what changed and what could not be verified.</li>
+            <li>The diff is small enough for a human to review in one sitting.</li>
+          </ul>
+        </article>
+
+        <aside class="lesson-aside">
+          <h3 class="mono">Instructor note</h3>
+          <p>Beginners usually think prompting is about clever wording. In practice, it is about task design: what should the agent know, what should it avoid, and how will we know it worked?</p>
+          <h3 class="mono">Common failure</h3>
+          <p>If "done when" is missing, Codex may still produce a plausible change, but the learner has no reliable way to judge completion.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="reliability-lab" aria-labelledby="lab-h">
+      <div class="section-head">
+        <span class="mono muted section-label">// advanced lab</span>
+        <h2 id="lab-h">Codex + Claude + Hermes reliability loop</h2>
+      </div>
+
+      <p class="section-intro">This lab teaches a practical separation of responsibilities. Codex builds inside the repo, Claude critiques assumptions and edge cases, and Hermes evaluates whether the workflow behaves reliably across a repeatable test set.</p>
+
+      <div class="lab-grid">
+        <article class="module-card">
+          <span class="mono muted">step_01</span>
+          <h3>Build with Codex</h3>
+          <p>Implement a small agentic workflow, add logging or traces, write a focused test, and document the tool contract.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">step_02</span>
+          <h3>Critique with Claude</h3>
+          <p>Ask for architecture risks, missing edge cases, prompt ambiguity, unsafe assumptions, and failure modes that are not covered by tests.</p>
+        </article>
+        <article class="module-card">
+          <span class="mono muted">step_03</span>
+          <h3>Evaluate with Hermes</h3>
+          <p>Create a golden set, run the workflow repeatedly, compare expected and actual behavior, and track regressions over time.</p>
+        </article>
+      </div>
+
+      <div class="course-table-wrap">
+        <table class="course-table">
+          <thead>
+            <tr>
+              <th>Artifact</th>
+              <th>What good looks like</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Golden set</td>
+              <td>10-20 realistic cases with expected behavior and edge cases</td>
+              <td>Prevents demo-driven confidence</td>
+            </tr>
+            <tr>
+              <td>Failure taxonomy</td>
+              <td>Categories such as retrieval miss, wrong tool, bad citation, unsafe action, or vague refusal</td>
+              <td>Makes errors discussable and fixable</td>
+            </tr>
+            <tr>
+              <td>Trace review</td>
+              <td>Each failed case includes the input, tools called, model output, and final verdict</td>
+              <td>Turns "it failed" into a debugging path</td>
+            </tr>
+            <tr>
+              <td>Release bar</td>
+              <td>Clear pass/fail rule before the workflow is trusted</td>
+              <td>Stops subjective approval from creeping in</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="next-h">
+      <div class="section-head">
+        <span class="mono muted section-label">// next build</span>
+        <h2 id="next-h">What I would build next</h2>
+      </div>
+
+      <ul class="course-checklist wide">
+        <li>Record two short walkthroughs: one beginner Codex workflow and one reliability lab walkthrough.</li>
+        <li>Publish starter templates for `AGENTS.md`, a Codex task prompt, and a golden evaluation set.</li>
+        <li>Add one real repo exercise where learners make a small feature change and verify it end to end.</li>
+      </ul>
+
+      <p class="mono muted course-disclaimer">Independent course preview. Codex is an OpenAI product; this course is not affiliated with or endorsed by OpenAI.</p>
+    </section>
+  </main>
+
+  <footer class="site-foot mono">
+    <span>© <span id="year">2026</span> jaya rajwani</span>
+    <span><a href="index.html#courses">back to portfolio</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
