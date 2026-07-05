@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jaya Rajwani — Director of AI</title>
   <meta name="description" content="Jaya Rajwani, Director of AI — building AI products that matter, from computer vision at scale to client-facing multi-agent systems." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jaya Rajwani — Director of AI" />
+  <meta property="og:description" content="Building AI products that matter — turning ambiguous workflows into reliable production systems, from computer vision at scale to client-facing multi-agent systems." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jaya Rajwani — Director of AI. Metrics: 12+ models in prod, 500K+ images, 50K+ farmers, 10K+ docs indexed." />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jaya Rajwani — Director of AI" />
+  <meta name="twitter:description" content="Building AI products that matter — turning ambiguous workflows into reliable production systems." />
+  <meta name="twitter:image" content="og-image.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -59,8 +78,8 @@
 
       <div class="about-grid">
         <div class="bio">
-          <p>I'm a Director of AI based in London, currently building Google Cloud-based agentic AI systems for Fortune 500 use cases at Traversaal.ai. My work sits at the intersection of research and production — I lead discovery with customers, design the architecture, build the evaluation layer that proves it works, and ship it.</p>
-          <p>Over the last several years I've led teams shipping end-to-end AI/ML systems across driver safety, transportation infrastructure, healthcare, and agri-tech — work that's ranged from computer vision pipelines processing hundreds of thousands of images to multi-agent systems coordinating tool calls across a Fortune 500 retailer's catalog.</p>
+          <p>I'm a Director of AI based in London, currently building Google Cloud-based agentic AI systems for enterprise use cases at Traversaal.ai. My work sits at the intersection of research and production — I lead discovery with customers, design the architecture, build the evaluation layer that proves it works, and ship it.</p>
+          <p>Over the last several years I've led teams shipping end-to-end AI/ML systems across driver safety, transportation infrastructure, healthcare, and agri-tech — work that's ranged from computer vision pipelines processing hundreds of thousands of images to multi-agent systems coordinating tool calls across an enterprise retail client's catalog.</p>
           <p>Before AI leadership, I was an engineer — and before that, an MS Data Science student at USC who spoke at my own commencement. I still teach: I've taught GenAI and agent architecture to ~500+ engineers, founders, and PMs through Maven, and co-created a free 7-day AI Agents course that reached 10,000+ learners.</p>
 
           <h3 class="mono subhead">Education</h3>
@@ -111,7 +130,7 @@
           <div class="skill-group">
             <p class="mono muted skill-cat">leadership</p>
             <div class="tags">
-              <span class="tag">Applied AI Strategy</span><span class="tag">Engineering Leadership</span><span class="tag">Evaluation Roadmaps</span><span class="tag">Agile/Scrum</span><span class="tag">Fortune 500 Client Delivery</span><span class="tag">Mentorship</span>
+              <span class="tag">Applied AI Strategy</span><span class="tag">Engineering Leadership</span><span class="tag">Evaluation Roadmaps</span><span class="tag">Agile/Scrum</span><span class="tag">Enterprise Client Delivery</span><span class="tag">Mentorship</span>
             </div>
           </div>
         </aside>
@@ -172,12 +191,12 @@
               <span class="status-tag production">● PRODUCTION</span>
               <span class="mono muted case-index">case_02</span>
             </div>
-            <h3>Fortune 500 Retail — Multi-Agent Product Search &amp; Quoting</h3>
+            <h3>Enterprise Retail Client — Multi-Agent Product Search &amp; Quoting</h3>
             <p class="hook">Specialized agents for search, comparison, bundling, and quoting — coordinating through a shared protocol instead of one giant prompt.</p>
           </header>
           <button class="case-toggle mono" aria-expanded="false" aria-controls="retail-body">expand ↓</button>
           <div class="case-body" id="retail-body" hidden>
-            <div class="cb-row"><h4 class="mono">Problem</h4><p>A Fortune 500 retailer's customer-facing teams needed to search a large, fragmented product catalog, compare vendors, evaluate bundles, and generate mixed quotes — a workflow too broad and stateful for a single-agent chatbot to handle reliably.</p></div>
+            <div class="cb-row"><h4 class="mono">Problem</h4><p>An enterprise retail client's customer-facing teams needed to search a large, fragmented product catalog, compare vendors, evaluate bundles, and generate mixed quotes — a workflow too broad and stateful for a single-agent chatbot to handle reliably.</p></div>
             <div class="cb-row"><h4 class="mono">Architecture</h4><p>A multi-agent system on Vertex AI, Google ADK, and Gemini, using MCP for tool access and A2A (agent-to-agent) for coordination. Separate agents own search, vendor comparison, bundle evaluation, and quote generation; each communicates through a shared protocol rather than sharing one large context window.</p></div>
             <div class="cb-row"><h4 class="mono">Key decisions</h4><p>Splitting responsibilities into specialized agents kept each agent's context small enough to evaluate independently — critical for a client-facing system that had to clear evaluation gates before launch. A2A let each agent be built and tested in isolation before integration, instead of debugging one monolithic prompt.</p></div>
             <div class="cb-row"><h4 class="mono">Stack</h4><p>Vertex AI, Google ADK, Gemini, MCP, A2A.</p></div>
