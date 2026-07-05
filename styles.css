@@ -344,8 +344,9 @@ h2 {
 /* ---------- Courses ---------- */
 .course-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 .course-card {
   background: var(--surface);
@@ -354,7 +355,6 @@ h2 {
   padding: 24px;
 }
 .featured-course {
-  grid-row: span 3;
   border-color: rgba(94, 234, 212, 0.35);
 }
 .course-topline {
@@ -660,6 +660,13 @@ h2 {
 
 /* ---------- Work / case cards ---------- */
 .work-grid { display: grid; gap: 20px; }
+.case[data-case="vantage"] { order: 1; }
+.case[data-case="retail"] { order: 2; }
+.case[data-case="transconomy"] { order: 3; }
+.case[data-case="lens"] { order: 4; }
+.case[data-case="fhwa"] { order: 5; }
+.case[data-case="motive"] { order: 6; }
+.case[data-case="farmdar"] { order: 7; }
 
 .case {
   background: var(--surface);
@@ -767,6 +774,50 @@ h2 {
 
 /* ---------- Talks / logs ---------- */
 .log-groups { display: grid; gap: 40px; }
+.public-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.public-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+.public-card.wide-card {
+  grid-column: 1 / -1;
+}
+.public-card p {
+  margin: 0 0 18px 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.public-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.public-links a {
+  display: inline-flex;
+  padding: 6px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.public-links a:hover {
+  color: var(--signal);
+  border-color: var(--signal);
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .public-grid { grid-template-columns: 1fr; }
+  .public-card.wide-card { grid-column: auto; }
+}
 .log-group-title {
   font-size: 13px;
   color: var(--signal);
