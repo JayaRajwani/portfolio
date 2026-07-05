@@ -40,7 +40,8 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#work">Work</a>
-      <a href="#talks">Talks &amp; Writing</a>
+      <a href="#courses">Courses</a>
+      <a href="#talks">Teaching</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-social" aria-label="Social links">
@@ -138,7 +139,22 @@
 
       <div class="awards">
         <p class="mono muted skill-cat">awards &amp; recognition</p>
-        <p class="awards-line">ElevenLabs Track Winner, AI for the Real World Hackathon (2026) · USC Commencement Speaker · Viterbi Graduate Student Leadership Award (2022) · Fulbright Master's Scholarship Program, Principal Candidate (2020) · Solver, MIT Solve (2019)</p>
+        <div class="award-carousel" aria-label="Awards and recognition">
+          <div class="award-track">
+            <span class="award-logo-card"><strong>ElevenLabs</strong><small>Hackathon Track Winner · 2026</small></span>
+            <span class="award-logo-card"><strong>USC</strong><small>Commencement Speaker</small></span>
+            <span class="award-logo-card"><strong>Viterbi</strong><small>Graduate Student Leadership Award · 2022</small></span>
+            <span class="award-logo-card"><strong>Fulbright</strong><small>Principal Candidate · 2020</small></span>
+            <span class="award-logo-card"><strong>MIT Solve</strong><small>Solver · 2019</small></span>
+            <span class="award-logo-card"><strong>UNDP</strong><small>Youth Award · COVID-19 Map</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>ElevenLabs</strong><small>Hackathon Track Winner · 2026</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>USC</strong><small>Commencement Speaker</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>Viterbi</strong><small>Graduate Student Leadership Award · 2022</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>Fulbright</strong><small>Principal Candidate · 2020</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>MIT Solve</strong><small>Solver · 2019</small></span>
+            <span class="award-logo-card" aria-hidden="true"><strong>UNDP</strong><small>Youth Award · COVID-19 Map</small></span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -392,15 +408,62 @@
       </div>
     </section>
 
+    <section id="courses" aria-labelledby="courses-h">
+      <div class="section-head">
+        <span class="mono muted section-label">// courses</span>
+        <h2 id="courses-h">Self-paced courses</h2>
+      </div>
+
+      <p class="section-intro">I teach applied AI the way I build it: practical, workflow-first, and grounded in real constraints. These courses are designed for people who want to use AI systems at work, not just understand them conceptually.</p>
+
+      <div class="course-grid">
+        <article class="course-card featured-course">
+          <div class="course-topline">
+            <span class="status-tag production">IN DEVELOPMENT</span>
+            <span class="mono muted case-index">course_01</span>
+          </div>
+          <h3>Codex in Practice</h3>
+          <p>A self-paced course for using Codex on real work: planning, prompting, repo guidance, safe edits, testing, reviews, skills, MCP, subagent workflows, and multi-agent reliability patterns with Claude and Hermes.</p>
+          <ul class="course-list">
+            <li>12 core chapters + advanced reliability module</li>
+            <li>Builds a usable Codex workflow, not a docs tour</li>
+            <li>Shows how Codex, Claude, and Hermes can work together to build, critique, and evaluate agentic systems</li>
+          </ul>
+          <p class="mono muted note">Independent course. Not affiliated with or endorsed by OpenAI.</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-topline">
+            <span class="status-tag live">LIVE</span>
+            <span class="mono muted case-index">course_02</span>
+          </div>
+          <h3>Agents in Action</h3>
+          <p>Contributor to an open-source, no-code/low-code AI agent-building course taught to professionals across Maven, Stanford Continuing Studies, UCLA, and University of Minnesota.</p>
+          <a class="ext-btn mono ghost" href="https://github.com/traversaal-ai/agents-in-action" target="_blank" rel="noopener">course repo ↗</a>
+        </article>
+
+        <article class="course-card">
+          <div class="course-topline">
+            <span class="status-tag live">TAUGHT</span>
+            <span class="mono muted case-index">course_03</span>
+          </div>
+          <h3>AI Agents Course</h3>
+          <p>Co-creator of a free 7-day AI Agents course that reached 10,000+ learners globally, covering agent loops, memory, RAG, multimodal agents, and scaling architectures.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="talks" aria-labelledby="talks-h">
       <div class="section-head">
-        <span class="mono muted section-label">// talks &amp; writing</span>
-        <h2 id="talks-h">Logs</h2>
+        <span class="mono muted section-label">// teaching, speaking &amp; writing</span>
+        <h2 id="talks-h">Public work</h2>
       </div>
+
+      <p class="section-intro">My public work spans AI agents, machine learning, developer education, women-in-tech communities, student mentorship, and applied AI systems in the wild.</p>
 
       <div class="log-groups">
         <div class="log-group">
-          <h3 class="mono log-group-title"># speaking</h3>
+          <h3 class="mono log-group-title"># featured speaking</h3>
 
           <figure class="embed-figure">
             <div class="embed-16x9">
@@ -417,9 +480,31 @@
 
           <ul class="log-list">
             <li><span class="log-mark mono">›</span><span class="log-body">Commencement Speaker, USC Master's Commencement Ceremony — <a href="https://www.youtube.com/watch?v=Dh3JJrhtFVM" target="_blank" rel="noopener">watch (starts at 33:46) ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Speaker, GHC 2023 — <a href="https://www.linkedin.com/posts/jayarajwani_had-the-opportunity-to-speak-at-ghc23-on-activity-7114688312170180612-Rq-6" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Speaker, Women Techmakers Kolachi — Blaze 2023 / Dare To Be — <a href="https://www.linkedin.com/posts/jayarajwani_wtmdaretobe-wtmkolachi-blaze2023-activity-7061392107667623936-P5a_" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
             <li><span class="log-mark mono">›</span><span class="log-body">Session Moderator, SlushD — AI in Pakistan — <a href="https://katalystlabs.pk/slushd/speaker/" target="_blank" rel="noopener">speaker page ↗</a></span></li>
             <li><span class="log-mark mono">›</span><span class="log-body">Panelist, Invest2Innovate — <a href="https://www.linkedin.com/posts/invest2innovate_meet-the-incredible-panelists-joining-us-activity-7395728588043431936-cke2" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
-            <li><span class="log-mark mono">›</span><span class="log-body">Additional speaking engagement — <a href="https://www.linkedin.com/feed/update/urn:li:activity:7290006388846559232/" target="_blank" rel="noopener">LinkedIn ↗</a></span></li>
+          </ul>
+        </div>
+
+        <div class="log-group">
+          <h3 class="mono log-group-title"># teaching &amp; workshops</h3>
+          <ul class="log-list">
+            <li><span class="log-mark mono">›</span><span class="log-body">Codex in Practice — self-paced course in development for builders who want to use Codex, Claude, and Hermes to build more reliable agentic systems.</span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Course Instructor, Maven — taught GenAI concepts including RAG, agents, MCP, transformers, and evaluation to ~500 engineers, founders, and PMs.</span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Co-creator, free 7-day AI Agents course — reached 10,000+ learners globally.</span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Contributor, Agents in Action — open-source AI agent-building course taught across Maven and university programs — <a href="https://github.com/traversaal-ai/agents-in-action" target="_blank" rel="noopener">GitHub ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Workshop Speaker, Women Who Code Emerging Tech — Introduction to Machine Learning — <a href="https://www.linkedin.com/posts/womenwhocodeemergingtech_super-excited-to-host-introduction-to-machine-activity-7172652935577849857-N06T" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Workshop Speaker, GDG Kolachi Build with AI — Gemini AI session for the local developer community — <a href="https://www.linkedin.com/posts/gdgkolachi_geminiai-buildwithai-gdgkolachi-activity-7165739506447335424-MzAn" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
+          </ul>
+        </div>
+
+        <div class="log-group">
+          <h3 class="mono log-group-title"># mentoring &amp; community</h3>
+          <ul class="log-list">
+            <li><span class="log-mark mono">›</span><span class="log-body">Mentor, Habib University — mentored a student group working on applied AI and machine intelligence projects — <a href="https://www.linkedin.com/posts/jayarajwani_mai-introduction-activity-7049351387893096448-ykhp" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">AI education initiative — helped create accessible AI learning opportunities for students and early-career technologists — <a href="https://www.linkedin.com/posts/jayarajwani_excited-to-be-doing-our-part-in-creating-activity-6776041092191182849-cSlw" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">COVID-19 Resource Map — built a public resource-finding project during COVID-19; winner of a UNDP Youth Award — <a href="https://www.linkedin.com/posts/jayarajwani_covid19map-activity-6650006227071926272-DBdz" target="_blank" rel="noopener">LinkedIn post ↗</a></span></li>
           </ul>
         </div>
 
@@ -447,16 +532,13 @@
             <li><span class="log-mark mono">›</span><span class="log-body">"How Data-Driven Impact Helped Me Improve Women's Health" — <a href="https://www.linkedin.com/pulse/data-driven-impact-how-helped-me-improve-womens-health-jaya-rajwani/" target="_blank" rel="noopener">LinkedIn Pulse ↗</a></span></li>
             <li><span class="log-mark mono">›</span><span class="log-body">"How Pakistan is Using Data Science and AI" — <a href="https://www.linkedin.com/pulse/how-pakistan-using-data-science-artificial-technology-jaya-rajwani/" target="_blank" rel="noopener">LinkedIn Pulse ↗</a></span></li>
             <li><span class="log-mark mono">›</span><span class="log-body">Whitepaper contribution — <a href="https://www.linkedin.com/in/jayarajwani/overlay/1635523528757/single-media-viewer/?profileId=ACoAABeSsGsBC5bMa4FINKxJdAIL4cc558drQ6w" target="_blank" rel="noopener">LinkedIn document ↗</a></span></li>
-            <li><span class="log-mark mono">›</span><span class="log-body">Published research paper — <a href="https://ieeexplore.ieee.org/document/8250136/" target="_blank" rel="noopener">IEEE Xplore ↗</a></span></li>
           </ul>
         </div>
 
         <div class="log-group">
-          <h3 class="mono log-group-title"># open source</h3>
+          <h3 class="mono log-group-title"># publications</h3>
           <ul class="log-list">
-            <li><span class="log-mark mono">›</span><span class="log-body">Agents in Action — contributor to an open-source, no-code/low-code AI agent-building course (301+ GitHub stars, taught to 1,500+ professionals across Maven, Stanford Continuing Studies, UCLA, and University of Minnesota). Co-built with Hamza Farooq, Gabriela de Queiroz, and others. — <a href="https://github.com/traversaal-ai/agents-in-action" target="_blank" rel="noopener">GitHub ↗</a></span></li>
-            <li><span class="log-mark mono">›</span><span class="log-body">Course Instructor, Maven — taught GenAI concepts (RAG, agents, MCP, transformers) to ~500 global engineers, founders, and PMs.</span></li>
-            <li><span class="log-mark mono">›</span><span class="log-body">Co-creator, free 7-day AI Agents course — reached 10,000+ global learners.</span></li>
+            <li><span class="log-mark mono">›</span><span class="log-body">Published research paper — IEEE Xplore — <a href="https://ieeexplore.ieee.org/document/8250136/" target="_blank" rel="noopener">view publication ↗</a></span></li>
           </ul>
         </div>
       </div>
