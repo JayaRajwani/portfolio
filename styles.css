@@ -1,5 +1,5 @@
 /* =========================================================
-   Jaya Rajwani — Portfolio
+   Jaya Rajwani Portfolio
    Design tokens per spec §1
    ========================================================= */
 :root {
@@ -253,6 +253,12 @@ h2 {
 .edu-school { font-family: var(--font-mono); font-size: 13px; color: var(--text-muted); }
 
 .skills .subhead { margin-top: 0; }
+.skills-summary {
+  cursor: default;
+  list-style: none;
+}
+.skills-summary::-webkit-details-marker { display: none; }
+.skills-summary::marker { content: ""; }
 .skill-group { margin-bottom: 20px; }
 .skill-cat {
   font-size: 11px;
@@ -272,6 +278,40 @@ h2 {
   transition: border-color 120ms ease, color 120ms ease;
 }
 .tag:hover { border-color: var(--signal); color: var(--signal); }
+
+@media (max-width: 700px) {
+  .skills {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .skills-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    margin: 0;
+  }
+  .skills-summary::after {
+    content: "show";
+    color: var(--signal);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+  .skills[open] .skills-summary {
+    margin-bottom: 16px;
+  }
+  .skills[open] .skills-summary::after {
+    content: "hide";
+  }
+  .skill-group { margin-bottom: 16px; }
+  .tag {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
 
 .awards {
   margin-top: 56px;

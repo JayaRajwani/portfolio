@@ -1,6 +1,10 @@
-# Jaya Rajwani — Portfolio
+# Jaya Rajwani Portfolio
 
-Personal technical portfolio site. Static HTML/CSS/JS — no build step required.
+Personal technical portfolio site.
+
+Live site: https://jayarajwani.vercel.app/
+
+Static HTML/CSS/JS with no build step required.
 
 ## Stack
 - Plain HTML, CSS, vanilla JS
